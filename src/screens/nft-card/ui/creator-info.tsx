@@ -16,7 +16,9 @@ const CreatorInfo = ({ userName }: CreatorField) => {
       {/* user name */}
       <p className="typo-3-regular flex space-x-100 text-blue-500">
         <span>Creation of</span>
-        <span className="text-white active:text-cyan-400">{userName}</span>
+        <span className="text-white group-active:text-cyan-400">
+          {userName}
+        </span>
       </p>
     </div>
   );

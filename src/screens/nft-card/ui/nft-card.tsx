@@ -1,7 +1,12 @@
 import Image from "next/image";
 
 import CreatorInfo from "@/screens/nft-card/ui/creator-info";
-import { iconClock, iconEthereum, imageEquilibrium } from "@/shared/assets";
+import {
+  iconClock,
+  iconEthereum,
+  iconView,
+  imageEquilibrium,
+} from "@/shared/assets";
 import {
   Card,
   CardContent,
@@ -46,7 +51,9 @@ const NftCardContent = (props: NftCardProps) => {
       <div className="space-y-300">
         {/* Text Area */}
         <div className="space-y-200">
-          <CardTitle className="typo-1 text-white">{title}</CardTitle>
+          <CardTitle className="typo-1 text-white group-active:text-cyan-400">
+            {title}
+          </CardTitle>
           <CardDescription className="typo-2 text-blue-500">
             {description}
           </CardDescription>
@@ -74,14 +81,25 @@ type NftCardProps = {
 const NftCard = (props: NftCardProps) => {
   const { title } = { ...props };
   return (
-    <Card className="mx-auto max-w-[350px] space-y-300 bg-blue-900 p-300">
-      <Image
-        alt={`${title} image`}
-        src={imageEquilibrium.src}
-        width={100}
-        height={100}
-        className="w-auto rounded-[8px]"
-      />
+    <Card className="group mx-auto max-w-[350px] space-y-300 bg-blue-900 p-300 shadow-2xl hover:cursor-pointer">
+      <div className="relative">
+        <Image
+          alt={`${title} image`}
+          src={imageEquilibrium.src}
+          width={100}
+          height={100}
+          className="w-full rounded-[8px]"
+        />
+        <Image
+          alt=""
+          src={iconView.src}
+          width={20}
+          height={20}
+          className="absolute top-1/2 left-1/2 z-10 hidden w-fit -translate-x-1/2 -translate-y-1/2 group-active:block"
+        />
+        <span className="absolute inset-0 hidden rounded-[8px] bg-cyan-400 opacity-[50.3%] group-active:block" />
+      </div>
+
       <NftCardContent {...props} />
     </Card>
   );
