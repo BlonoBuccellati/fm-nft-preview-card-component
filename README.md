@@ -36,19 +36,15 @@ Users should be able to:
 
 ### Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,nodejs,prisma,vercel)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,nodejs,vercel)](https://skillicons.dev)
 
 - [Next.js](https://nextjs.org/) - React framework
 - [React](https://reactjs.org/) - UI library of JS
 - [TypeScript](https://www.typescriptlang.org/) – Typed superset of JavaScript
 - [tailwindcss](https://tailwindcss.com/) - utility-first CSS framework
 - [node.js](https://nodejs.org/ja) - Runtime & Build Tools
-- [Prisma](https://www.prisma.io/) – ORM & database toolkit
-- [Neon](https://neon.com/) – Serverless PostgreSQL database platform
 - [Vercel](https://vercel.com/home) – Deployment & hosting platform
 - [shadcn/ui](https://ui.shadcn.com/) - A component collection built on Radix and Tailwind
-- [class-variance-authority (cva)](https://cva.style/docs) - A library for conditionally managing Tailwind utility classes
-- [next-themes](https://github.com/pacocoursey/next-themes) – Theme (dark/light) management library for React
 
 ## Author
 
