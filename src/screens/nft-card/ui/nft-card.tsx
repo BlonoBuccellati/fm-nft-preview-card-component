@@ -71,6 +71,28 @@ const NftCardContent = (props: NftCardProps) => {
   );
 };
 
+const CardImageArea = ({ title }: { title: string }) => {
+  return (
+    <div className="relative">
+      <Image
+        alt={`${title} image`}
+        src={imageEquilibrium.src}
+        width={100}
+        height={100}
+        className="w-full rounded-[8px]"
+      />
+      <Image
+        alt=""
+        src={iconView.src}
+        width={20}
+        height={20}
+        className="absolute top-1/2 left-1/2 z-10 hidden w-fit -translate-x-1/2 -translate-y-1/2 group-active:block"
+      />
+      <span className="absolute inset-0 hidden rounded-[8px] bg-cyan-400 opacity-[50.3%] group-active:block" />
+    </div>
+  );
+};
+
 type NftCardProps = {
   title: string;
   userName: string;
@@ -82,24 +104,7 @@ const NftCard = (props: NftCardProps) => {
   const { title } = { ...props };
   return (
     <Card className="group mx-auto max-w-[350px] space-y-300 bg-blue-900 p-300 shadow-2xl hover:cursor-pointer">
-      <div className="relative">
-        <Image
-          alt={`${title} image`}
-          src={imageEquilibrium.src}
-          width={100}
-          height={100}
-          className="w-full rounded-[8px]"
-        />
-        <Image
-          alt=""
-          src={iconView.src}
-          width={20}
-          height={20}
-          className="absolute top-1/2 left-1/2 z-10 hidden w-fit -translate-x-1/2 -translate-y-1/2 group-active:block"
-        />
-        <span className="absolute inset-0 hidden rounded-[8px] bg-cyan-400 opacity-[50.3%] group-active:block" />
-      </div>
-
+      <CardImageArea title={title} />
       <NftCardContent {...props} />
     </Card>
   );
