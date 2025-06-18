@@ -10,7 +10,7 @@ const CreatorInfo = ({ userName }: CreatorField) => {
   return (
     <div className="flex items-center space-x-200">
       <Avatar>
-        <AvatarImage src={ImageAvatar.src} />
+        <AvatarImage src={ImageAvatar.src} alt="user avatar" />
         <AvatarFallback>{userName}</AvatarFallback>
       </Avatar>
       {/* user name */}

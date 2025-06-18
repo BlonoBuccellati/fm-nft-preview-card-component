@@ -1,5 +1,5 @@
-import CardPage from "@/screens/nft-card/ui/card-page";
+import { NftPreviewCardPage } from "@/screens/nft-card/ui";
 
 export default function Home() {
-  return <CardPage />;
+  return <NftPreviewCardPage />;
 }

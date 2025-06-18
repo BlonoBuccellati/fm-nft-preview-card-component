@@ -1,6 +1,6 @@
-import NftCard from "./nft-card";
+import NftCard from "../nft-card";
 
-const CardPage = () => {
+const NftPreviewCardPage = () => {
   // ここでデータを取得する想定
   const userName = "Jules Wyvern";
   const title = "Equilibrium #3429";
@@ -20,4 +20,4 @@ const CardPage = () => {
   );
 };
 
-export default CardPage;
+export default NftPreviewCardPage;
