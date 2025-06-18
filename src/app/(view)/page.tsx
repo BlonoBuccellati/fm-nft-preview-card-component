@@ -1,3 +1,5 @@
+import CardPage from "@/screens/nft-card/ui/card-page";
+
 export default function Home() {
-  return <div className="bg-[var(--color-blue-500)] text-blue-500">test</div>;
+  return <CardPage />;
 }
