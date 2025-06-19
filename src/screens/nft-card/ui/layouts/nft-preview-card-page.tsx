@@ -8,7 +8,7 @@ const NftPreviewCardPage = () => {
   const price = 0.041;
   const lastUpdatedDate = 3;
   return (
-    <div className="flex min-h-screen items-center">
+    <main className="flex min-h-screen items-center">
       <NftCard
         title={title}
         description={description}
@@ -16,7 +16,7 @@ const NftPreviewCardPage = () => {
         lastUpdatedDate={lastUpdatedDate}
         userName={userName}
       />
-    </div>
+    </main>
   );
 };
 

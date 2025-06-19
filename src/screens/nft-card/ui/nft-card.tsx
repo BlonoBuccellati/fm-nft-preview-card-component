@@ -79,7 +79,7 @@ const CardImageArea = ({ title }: { title: string }) => {
         src={imageEquilibrium.src}
         width={100}
         height={100}
-        className="w-full rounded-[8px]"
+        className="w-full rounded-[0.5rem]"
       />
       <Image
         alt=""
@@ -88,7 +88,7 @@ const CardImageArea = ({ title }: { title: string }) => {
         height={20}
         className="absolute top-1/2 left-1/2 z-10 hidden w-fit -translate-x-1/2 -translate-y-1/2 group-active:block"
       />
-      <span className="absolute inset-0 hidden rounded-[8px] bg-cyan-400 opacity-[50.3%] group-active:block" />
+      <span className="absolute inset-0 hidden rounded-[0.5rem] bg-cyan-400 opacity-[50.3%] group-active:block" />
     </div>
   );
 };
@@ -103,7 +103,7 @@ type NftCardProps = {
 const NftCard = (props: NftCardProps) => {
   const { title } = { ...props };
   return (
-    <Card className="group mx-auto max-w-[350px] space-y-300 bg-blue-900 p-300 shadow-2xl hover:cursor-pointer">
+    <Card className="group mx-auto max-w-[21.875rem] space-y-300 bg-blue-900 p-300 shadow-2xl hover:cursor-pointer">
       <CardImageArea title={title} />
       <NftCardContent {...props} />
     </Card>
